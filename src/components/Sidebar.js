@@ -6,7 +6,9 @@ function Sidebar() {
   return (
     <>
       <div className='Sidebar'>
-        <h1>fffefe</h1>
+        <Link to="#" className='menu-bars'>
+        <FaIcons.FaBars />
+        </Link>
       </div>  
     </>
   )
