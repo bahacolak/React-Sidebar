@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import Reports from './pages/Reports';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -9,7 +12,9 @@ function App() {
       <Router>
          <Sidebar />
          <Routes>
-           <Route  path='/'/>
+           <Route  path='/' exact component={<Home />}/>
+           <Route path='/reports' component={<Reports />} />
+          <Route path='/products' component={<Products />} />
          </Routes>
       </Router>
     </>
