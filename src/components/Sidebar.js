@@ -14,7 +14,7 @@ function Sidebar() {
 
   return (
     <>
-    <IconContext.Provider value={{ color: '#fff' }}>
+    <IconContext.Provider value={{ color: "red"}}>
       <div className='Sidebar'>
         <Link to="#" className='menu-bars'>
         <FaIcons.FaBars onClick={showSidebar} />
