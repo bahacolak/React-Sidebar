@@ -14,14 +14,14 @@ function Sidebar() {
 
   return (
     <>
-    <IconContext.Provider value={{ color: "red"}}>
+    <IconContext.Provider value={{ color: "grey"}}>
       <div className='Sidebar'>
         <Link to="#" className='menu-bars'>
         <FaIcons.FaBars onClick={showSidebar} />
         </Link>
       </div>  
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className='nev-menu-items'>
+        <ul className='nev-menu-items'onClick={showSidebar}>
           <li className='navbar-toggle'>
             <Link to="#" className='menu-bars'>
               <AiIcons.AiOutlineClose />
