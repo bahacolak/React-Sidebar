@@ -12,6 +12,11 @@
   background: none;
 }
 
+.menu-bars:hover{
+  color: white;
+  transition: 250ms;
+}
+
 .nav-menu{
   background-color:#060b26;
   width: 160px;
